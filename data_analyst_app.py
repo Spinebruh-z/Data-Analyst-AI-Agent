@@ -55,7 +55,7 @@ with st.sidebar:
     together_api_key = st.text_input(
         "Enter Together.ai API Key", 
         type="password",
-        help="Required for accessing the Llama-4-Maverick model"
+        help="Required for accessing the Llama-3.3-70B-Instruct-Turbo"
     )
     
     if together_api_key:
@@ -161,7 +161,7 @@ if prompt := st.chat_input("Ask questions about your data, request analysis, or 
     else:
         # Generate response
         with st.chat_message("assistant"):
-            with st.spinner(" Analyzing your request...(This might take fewminutes)"):
+            with st.spinner(" Analyzing your request...(This might take few minutes)"):
                 try:
                     # Get response from RAG handler
                     response_data = st.session_state.rag_handler.get_response(
