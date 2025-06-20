@@ -5,6 +5,7 @@ plotly>=5.15.0
 
 # Together.ai API client
 together>=0.2.0
+langchain-together>=0.0.2
 
 # LangChain ecosystem
 langchain>=0.1.0
